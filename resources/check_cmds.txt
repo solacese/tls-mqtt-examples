@@ -1,0 +1,6 @@
+
+# mqttclient keystore password: mqttsample
+
+keytool -v -list -keystore mqttclient.keystore
+
+openssl verify -verbose -x509_strict -CAfile sampleCA.pem mqttclient.crt
